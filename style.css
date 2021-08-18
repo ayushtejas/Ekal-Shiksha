@@ -1217,3 +1217,78 @@ input::-webkit-inner-spin-button {
 			 padding: 0;
 			 background-image: url('https://c.tenor.com/Y5uBrlmym_oAAAAM/ocean-pastel.gif');
 		 }
+ .navbar {
+		   position: sticky;
+		   height: 46px;
+		   background-color: #1b1b1b;
+		 }
+
+		 .navbar a {
+		     float: left;
+		     font-size: 16px;
+		     color: white;
+		     text-align: center;
+		     /* padding: 14px 16px; */
+		     text-decoration: none;
+		 }
+
+		 .dropdown {
+		     position: relative;
+		 }
+
+		 .dropdown .dropbtn {
+		     font-size: 16px;
+		     border: none;
+		     color: black;
+				 border-radius: 5px;
+		     padding: 0px 2px;
+		     background-color: inherit;
+		     font-family: inherit;
+		     margin: 0;
+		 }
+
+		 .navbar a:hover, .dropdown:hover .dropbtn {
+		     background-color: #01937C;
+				 color: white;
+
+		 }
+
+		 .dropdown-one {
+		   cursor: pointer;
+		   display: none;
+		   position: absolute;
+		   background-color: #fff;
+			 border-radius: 5px;
+		   min-width: 160px;
+		   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		 }
+
+		 .dropdown-two {
+		   cursor: pointer;
+		   display: none;
+		   position: relative;
+		   left: 160px;
+		   top: 0px;
+			 border-radius: 5px;
+		   min-width: 160px;
+		   background-color: #f9f9f9;
+		   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		 }
+
+		 .dropdown:hover .dropdown-one, #link1:hover > .dropdown-two {
+		   display: block;
+		 }
+
+		 .dropdown-one .dItem {
+		     color: black;
+		     padding: 7px 2px;
+		     display: block;
+		     text-align: left;
+				 border-radius: 5px;
+		 }
+
+		 .dropdown-one .dItem:hover, .dropdown-two a:hover {
+		     background-color: #01937C;
+				 color: #fff;
+		 }
+
