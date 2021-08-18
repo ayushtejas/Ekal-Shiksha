@@ -1259,7 +1259,7 @@ input::-webkit-inner-spin-button {
 		   position: absolute;
 		   background-color: #fff;
 			 border-radius: 5px;
-		   min-width: 17px;
+		   min-width: 160px;
 		   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		 }
 
@@ -1267,7 +1267,7 @@ input::-webkit-inner-spin-button {
 		   cursor: pointer;
 		   display: none;
 		   position: relative;
-		   left: 90px;
+		   left: 160px;
 		   top: 0px;
 			 border-radius: 5px;
 		   min-width: 20px;
@@ -1290,5 +1290,14 @@ input::-webkit-inner-spin-button {
 		 .dropdown-one .dItem:hover, .dropdown-two a:hover {
 		     background-color: #01937C;
 				 color: #fff;
+		 }
+		 .side-menu .dropdown-two{
+			 min-width: 20px;
+			 left: 90px;
+		 }
+		 .side-menu .dropdown-one {
+
+		   min-width: 20px;
+		   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		 }
 
