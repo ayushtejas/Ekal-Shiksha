@@ -6,13 +6,16 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
 }
 body{
 	width: auto;
+	overflow-x: hidden;
 }
 
 html {
 	scroll-behavior: smooth;
+
 }
 body {
 	background: #FFF;
@@ -54,7 +57,7 @@ nav ul li a {
 	transition: .5s;
 	text-decoration: none;
 }
-nav ul li a:hover {
+ nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
 	background: #01937C;
@@ -259,7 +262,7 @@ a, button {
 	font-size: 50px;
 	text-align: center;
 	color: #fff;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("b1.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b1.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: cursive;
@@ -497,7 +500,7 @@ a, button {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("animated.gif");
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/animated.gif");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -718,7 +721,7 @@ form textarea {
 	margin-top: 50px;
 	width: 100%;
 	display: flex;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("b4.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b4.jpg");
 	background-size: cover;
 	padding: 50px 80px;
 	background-attachment: fixed;
@@ -795,7 +798,7 @@ footer {
 	padding: 50px 0;
 }
 footer .footer-container {
-	max-width: 1300px;
+	width: 100%;
 	margin: auto;
 	padding: 0 20px;
 	display: flex;
@@ -811,10 +814,21 @@ footer .logo {
 	color: #fff;
 }
 footer .social-media a{
-	margin-right: 10px;
+	margin-right: 20px;
+  margin-bottom:  20px;
+  margin-top: 20px;
 	font-size: 22px;
 	text-decoration: none;
 }
+footer .middle-col a{
+	margin-right: 20px;
+  margin-bottom:  20px;
+  margin-top: 20px;
+	fon
+	text-decoration: none;
+	color: #fff;
+}
+
 footer .right-col h1{
 	font-size: 26px;
 }
@@ -912,17 +926,37 @@ footer .btn:hover {
 	}
 
 }
+@media screen and (max-width: 400px) {
+   nav{
+		 width: 80%;
+	 }}
 @media screen and (max-width: 700px) {
 	footer .btn{
 		margin: 0;
 		width: 100%;
 		margin-top: 20px;
 	}
+
+	.quote p, .quote h3, .play,.quote h4 {
+		justify-content: center;
+text-align: left;
+margin-left: 5%;}
+.play{
+	width: 50%;
+}
 	.svg-image img {
-		width: 70%;
-		margin: 20px;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10% ;
 		/* align-self: center; */
 	}
+	.service-swipe{
+		margin-top: 3%;
+		width:100%;
+	}
+.svg-image{
+	margin-left: 0%;
+}
 	.logo img{
 		width: 100px;
 		cursor: pointer;
@@ -932,8 +966,13 @@ footer .btn:hover {
 
 	.logo{
 		margin-left: 0;
+		width: 50%;
+	}
+	nav{width: 100%;}
+	body{
 	}
 }
+
 
 @media screen and (max-width: 1000px) {
 	.feedbox form input, .feedbox form .fname{
@@ -961,7 +1000,7 @@ input::-webkit-inner-spin-button {
 				float: left;
 				position: relative;
 				padding: 30px 0;
-				background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url('svg1.jpg');
+				background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url('images/extra/svg1.jpg');
 				background-attachment: fixed;
 				background-repeat:round;
 				z-index: 1;
@@ -1211,13 +1250,28 @@ input::-webkit-inner-spin-button {
 		 .swiper-slide .swiper-slide-active{
 			 margin-right: 0px;
 		 }
-		 .imlogo{
-			 /* box-shadow: 0 0 50px rgba(255,255,255,0.8); */
-			 border-radius: 50px;
-			 padding: 0;
-			 background-image: url('https://c.tenor.com/Y5uBrlmym_oAAAAM/ocean-pastel.gif');
-		 }
- .navbar {
+		 .middle-col{
+			 display: flex;
+		 flex-direction: row;
+	 font-weight: normal;
+	 padding-top: 15%;
+ color: #F3F4ED;		 }
+ .sub-menu1{
+	 display: flex;
+	 flex-direction: column;
+ }
+ .sub-menu2{
+	 display: flex;
+	 flex-direction: column;
+ }
+ .menu-1{
+	 display:flex;
+ flex-direction: row;}
+ .menu-11{
+	 display: flex;
+	 flex-direction: column;
+ }
+		 .navbar {
 		   position: sticky;
 		   height: 46px;
 		   background-color: #1b1b1b;
@@ -1266,11 +1320,11 @@ input::-webkit-inner-spin-button {
 		 .dropdown-two {
 		   cursor: pointer;
 		   display: none;
-		   position: relative;
+		   position: absolute;
 		   left: 160px;
-		   top: 0px;
+		   top: 170px;
 			 border-radius: 5px;
-		   min-width: 20px;
+		   min-width: 70px;
 		   background-color: #f9f9f9;
 		   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		 }
@@ -1300,4 +1354,29 @@ input::-webkit-inner-spin-button {
 		   min-width: 20px;
 		   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		 }
+		 @media screen and (max-width: 700px) {
+			 body{
+			 overflow-x:hidden;
+		 }
 
+			 .dropdown-two{
+				 left:100px;
+				 position: absolute;
+			 }
+			 .middle-col{
+				 font-size: 15px;
+				 font-weight: 400;
+				 text-align: left;
+				 padding-top: 5%;
+			 }
+			 footer .middle-col a{
+			 	margin-right: 20px;
+			   margin-bottom:  20px;
+			   margin-top: 20px;
+			 	font-size: 1.1rem;
+			 	text-decoration: none;
+			 	color: #fff;
+			 }
+		 .head-container {
+			 margin-top: 200px;
+			 }}
